@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ICICIBankSuite">
+  <test thread-count="5" name="Chrome">
+	<parameter name="browser" value="Chrome"></parameter>  
+    <classes>
+      <class name="TestNg_ICICI.ElementsOfEduLoanTest"/>
+      <class name="TestNg_ICICI.LoanBenefitsAndFeaturesTest"/>
+    </classes>
+  </test> <!-- EducationLoanTest -->
+  
+  <test thread-count="5" name="Edge">
+	<parameter name="browser" value="Edge"></parameter>  
+    <classes>
+      <class name="TestNg_ICICI.ElementsOfEduLoanTest"/>
+      <class name="TestNg_ICICI.LoanBenefitsAndFeaturesTest"/>
+    </classes>
+  </test> <!-- EducationLoanTest -->
+  
+  
+  
+</suite> <!-- ICICIBankSuite -->

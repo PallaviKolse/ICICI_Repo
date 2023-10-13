@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNg_ICICI.ElementsOfEduLoanTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchbrowser"/>
+          <include name="creatingPOMObjects"/>
+          <include name="clearObject"/>
+          <include name="openHomePage"/>
+          <include name="EducationLoanPageFullNameTest"/>
+          <include name="logoutFromApplication"/>
+        </methods>
+      </class> <!-- TestNg_ICICI.ElementsOfEduLoanTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="5" name="Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestNg_ICICI.LoanBenefitsAndFeaturesTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="openHomePage"/>
+          <include name="verifyLoanBenefitAndFeature"/>
+          <include name="signOut"/>
+          <include name="creatingPOMObjects"/>
+          <include name="exit"/>
+          <include name="clearObject"/>
+        </methods>
+      </class> <!-- TestNg_ICICI.LoanBenefitsAndFeaturesTest -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
